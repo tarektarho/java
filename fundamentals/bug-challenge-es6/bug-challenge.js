@@ -45,6 +45,7 @@ export default class BugChallenge {
         console.log(`${person.name} is ${person.age}`);
       }
     }
+    //bug1 i  changed the for loop from  let preson in people  to  let preson of people
 
     bug2() {
       const array = [1, 2, 3, 4];
@@ -54,6 +55,7 @@ export default class BugChallenge {
         console.log(array);
       }
     }
+    //bug2 i used the fuction .reverse to revers the content of the arrray then i used then i chend the for loop 
 
     bug3() {
       const array = {};
@@ -71,6 +73,8 @@ export default class BugChallenge {
 
       console.log(total.length -1);
     }
+    //bug 3  i changed the concole log to total.length -1 and 
+    // and key in array
 
     bug4() {
       // We list all movies, except the top 3.
@@ -78,12 +82,14 @@ export default class BugChallenge {
       for (index; index < this.top10Movies.length; index++) {
         console.log(`movie: ${this.top10Movies[index]}`);
       }
+       index = 3;
 
       // We also list all actors, except the top 3.
      for (index; index < this.top10Actors.length; index++) {
         console.log(`actor: ${this.top10Actors[index]}`);
       }
     }
+    //bug4 i chenged the var to let and after the  first loop i set index = 3  agine 
 
     bug5() {
       const defaultMethod = 'GET';
@@ -103,17 +109,20 @@ export default class BugChallenge {
       });
     }
 
-    bug6() {
+     bug6() {
       function run(options) {
         if (options.script == undefined) {
           options.script = 'main.js';
         }
-
+        
         console.log(`run: script=${options.script}`);
       }
+ run({});
 
-      run();
+     
     }
+    //bug6 i set options to undefined useing this {}
+    
 
     bug7() {
       function run(options = {}) {
