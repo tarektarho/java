@@ -126,7 +126,7 @@ export default class BugChallenge {
 
     bug7() {
       function run(options = {}) {
-        if (options.stopOnError == undefined) {
+        if (options.stopOnError === undefined) {
           options.stopOnError = 'all';
         }
 
